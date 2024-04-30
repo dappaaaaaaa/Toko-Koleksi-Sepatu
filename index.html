@@ -1,170 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bismillah</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramadhan Produktif</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap"
-        rel="stylesheet">
+      rel="stylesheet" />
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar start -->
     <nav class="navbar">
-        <a href="#" class="navbar-logo">Koleksi<span>Sepatu</span>.</a>
+      <a href="#" class="navbar-logo">Koleksi<span>Sepatu</span>.</a>
 
-        <div class="navbar-nav">
-            <a href="#">Home</a>
-            <a href="#about">Tentang Kami</a>
-            <a href="#baru">Produk Kami</a>
-            <a href="#contact">Kontak</a>
-        </div>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#baru">Produk Kami</a>
+        <a href="#contact">Kontak</a>
+      </div>
 
-        <div class="navbar-extra">
-            <a href="#" id="search"> <i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i></a>
-            <a href="#" id="menu"> <i data-feather="menu"></i></a>
-        </div>
+      <div class="navbar-extra">
+        <a href="#" id="search-button"> <i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu"> <i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form Start  -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form End  -->
     </nav>
     <!-- Navbar end -->
 
     <!-- Section Start -->
     <section class="section" id="home">
-        <main class="content">
-            <h1>Find Your Dream <span>Shoes</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, facere?</p>
-            <a href="#" class="cta">Beli Sekarang</a>
-        </main>
+      <main class="content">
+        <h1>Find Your Dream <span>Shoes</span></h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, facere?</p> -->
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
     </section>
     <!-- Section end -->
 
     <!-- About Section Start -->
     <section id="about" class="about">
-        <h2>Tentang <span>Kami</span></h2>
-        <div class="row">
-            <div class="about-img">
-                <img src="img/tentangkami.jpg" alt="Tentang Kami">
-            </div>
-            <div class="content">
-                <h3>Kenapa harus di toko kami?</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod consequuntur quo ullam quis, nostrum
-                    est.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam doloremque possimus minus
-                    nobis consectetur dolorem doloribus laudantium nisi explicabo!</p>
-            </div>
+      <h2>Tentang <span>Kami</span></h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentangkami.jpg" alt="Tentang Kami" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="150" />
         </div>
+        <div class="content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+          <h3>Kenapa harus di toko kami?</h3>
+          <p>
+            Karena kualitas Produk di toko kami adalah yang terbaik dan juga
+            beragam pilihan sepatu yang bisa anda jadikan sebagai pilihan anda.
+            Selain itu harga yang ditawarkan sudah pasti pas di kantong.
+          </p>
+          <p>
+            Di toko kami juga di beri kemudahan dalam berbelanja dan kami
+            memberikan rasa aman dan nyaman dalam berbelanja agar Pelanggan kami
+            akan lebih percaya untuk berbelanja di toko kami yang sudah pasti
+            terjamin keamanannya dan menerapkan protokol kesehatan yang baik.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- About Section End -->
 
     <!-- Produk Section Start -->
     <section id="baru" class="baru">
-        <h2>Produk <span>Kami</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam quia ab saepe ullam rem.</p>
-        <div class="row">
-            <div class="baru-card">
-                <img src="img/produk/1.jpg" alt="Court Line White">
-                <h3 class="baru-card-title">- Court Line White -</h3>
-                <p class="baru-card-price">IDR 3.240K</p>
-            </div>
-            <div class="baru-card">
-                <img src="img/produk/1.jpg" alt="Court Line White">
-                <h3 class="baru-card-title">- Court Line White -</h3>
-                <p class="baru-card-price">IDR 3.240K</p>
-            </div>
-            <div class="baru-card">
-                <img src="img/produk/1.jpg" alt="Court Line White">
-                <h3 class="baru-card-title">- Court Line White -</h3>
-                <p class="baru-card-price">IDR 3.240K</p>
-            </div>
-            <div class="baru-card">
-                <img src="img/produk/1.jpg" alt="Court Line White">
-                <h3 class="baru-card-title">- Court Line White -</h3>
-                <p class="baru-card-price">IDR 3.240K</p>
-            </div>
-            <div class="baru-card">
-                <img src="img/produk/1.jpg" alt="Court Line White">
-                <h3 class="baru-card-title">- Court Line White -</h3>
-                <p class="baru-card-price">IDR 3.240K</p>
-            </div>
-            <div class="baru-card">
-                <img src="img/produk/1.jpg" alt="Court Line White">
-                <h3 class="baru-card-title">- Court Line White -</h3>
-                <p class="baru-card-price">IDR 3.240K</p>
-            </div>
+      <h2>Produk <span>Kami</span></h2>
+      <!-- <p> Our Favorite Style.</p> -->
+      <div class="row">
+        <div class="baru-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="#"><img src="img/produk/1.png" alt="Court Line White" /></a>
+          <h3 class="baru-card-title">- Court Line White -</h3>
+          <p class="baru-card-price">IDR 3.240K</p>
         </div>
+        <div class="baru-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="#"><img src="img/produk/2.png" alt="Premium Suede Stone Grey" /></a>
+          <h3 class="baru-card-title">- Premium Suede Stone Grey -</h3>
+          <p class="baru-card-price">IDR 4.100K</p>
+        </div>
+        <div class="baru-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="#"><img src="img/produk/3.png" alt="Angel Sand" /></a>
+          <h3 class="baru-card-title">- Angel Sand -</h3>
+          <p class="baru-card-price">IDR 3.900K</p>
+        </div>
+        <div class="baru-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="#"><img src="img/produk/4.png" alt="Premium Court Marine Blue" /></a>
+          <h3 class="baru-card-title">- Premium Court Marine Blue -</h3>
+          <p class="baru-card-price">IDR 3.750K</p>
+        </div>
+        <div class="baru-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="#"><img src="img/produk/5.png" alt="Court Lite Black White" /></a>
+          <h3 class="baru-card-title">- Court Lite Black White -</h3>
+          <p class="baru-card-price">IDR 3.875K</p>
+        </div>
+        <div class="baru-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="#"><img src="img/produk/6.png" alt="Premium Court Cedar Brown" /></a>
+          <h3 class="baru-card-title">- Premium Court Cedar Brown -</h3>
+          <p class="baru-card-price">IDR 4.000K</p>
+        </div>
+      </div>
     </section>
     <!-- Produk Section End -->
 
     <!-- Kontak Section Start -->
     <section id="contact" class="contact">
-        <h2>Kontak <span>Kami</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, impedit.</p>
+      <h2>Kontak <span>Kami</span></h2>
+      <p>
+        Jika ada saran, kritik dan masukkan, Hubungi kami melalui kontak dibawah
+        ini.
+      </p>
 
-        <div class="row">
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15959.268568940946!2d109.31883884999999!3d-0.0440305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMDMnMDIuNSJTIDEwOcKwMTknMjYuMiJF!5e0!3m2!1sid!2sid!4v1680875706567!5m2!1sid!2sid"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <form action="">
-                <div class="input-group">
-                    <i data-feather="user"></i>
-                    <input type="text" placeholder="nama">
-                </div>
-                <div class="input-group">
-                    <i data-feather="mail"></i>
-                    <input type="text" placeholder="email">
-                </div>
-                <div class="input-group">
-                    <i data-feather="phone"></i>
-                    <input type="text" placeholder="no hp">
-                </div>
-                <button type="submit" class="btn">kirim pesan</button>
-            </form>
-
-        </div>
+      <div class="row">
+        <iframe class="map" data-aos="fade-right" data-aos-delay="150"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15959.268568940946!2d109.31883884999999!3d-0.0440305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMDMnMDIuNSJTIDEwOcKwMTknMjYuMiJF!5e0!3m2!1sid!2sid!4v1680875706567!5m2!1sid!2sid"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <form action="" data-aos="fade-left" data-aos-delay="150">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <div class="input-pesan">
+            <i data-feather="inbox"></i>
+            <input type="text" placeholder="Type here.." />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
     </section>
     <!-- Kontak Section End -->
 
     <!-- Footer Start -->
     <footer>
-        <div class="socials">
-            <a href=""><i data-feather="instagram"></i></a>
-            <a href=""><i data-feather="facebook"></i></a>
-        </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/daffa_febriy/"><i data-feather="instagram"></i></a>
+        <a href=""><i data-feather="facebook"></i></a>
+      </div>
 
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#about">Tentang Kami</a>
-            <a href="#baru">Produk Kami</a>
-            <a href="#contact">Kontak</a>
-        </div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#baru">Produk Kami</a>
+        <a href="#contact">Kontak</a>
+      </div>
 
-        <div class="credit">
-            <p>Created by <a href="">Muhammad Daffa Febriyan</a>. | &copy 2023.</p>
-        </div>
+      <div class="credit">
+        <p>
+          Created by <a href="">Muhammad Daffa Febriyan</a>. | &copy 2023.
+          <span>Version : 1.0</span>
+        </p>
+      </div>
     </footer>
     <!-- Footer End -->
 
     <!-- Icons -->
     <script>
-        feather.replace()
+      feather.replace();
     </script>
 
     <!-- Javascript -->
     <script src="js/script.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 
 </html>
